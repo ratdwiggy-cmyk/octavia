@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Log — Octavia Operating System</title>
+<meta name="description" content="A dated timeline of lessons learned across the Octavia Operating System.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="os.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="mark">
+    <span class="mark-dot" aria-hidden="true"></span>
+    <span class="mark-text">OCTAVIA</span>
+    <span class="mark-sub">capability platform</span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <a href="index.html">Overview</a>
+    <a href="projects.html">Projects</a>
+    <a href="research.html">Research</a>
+    <a href="experiments.html">Experiments</a>
+    <a href="tools.html">Tools</a>
+    <a href="frameworks.html">Frameworks</a>
+    <a href="learning-log.html" aria-current="true">Learning Log</a>
+    <a href="../index.html#contact" class="nav-cta">Work with me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <p class="os-breadcrumb"><a href="index.html">Operating System</a> / <span class="current">Learning Log</span></p>
+    <p class="eyebrow">06 / LEARNING LOG</p>
+    <h1 class="section-title" style="max-width:30ch;">The dated timeline underneath everything else</h1>
+    <p class="section-lede">Shorter and more frequent than the other sections — a running note of what was learned, independent of which project it came from. Most entries here don't need the full six-stage pipeline; a date, a note, and a tag are usually enough.</p>
+
+    <div class="log-list">
+
+      <!-- TEMPLATE START: copy this row for a new log entry -->
+      <article class="log-entry">
+        <span class="log-date">2026.03</span>
+        <div class="log-body">
+          <h3>[What you learned, stated as a takeaway, not a diary entry]</h3>
+          <p>[A few sentences: what happened, what it revealed, and what you'll do differently. Link to the related Project, Research, or Experiment entry if there is one.]</p>
+          <div class="entry-tags"><span>[tag]</span></div>
+        </div>
+      </article>
+      <!-- TEMPLATE END -->
+
+      <article class="log-entry">
+        <span class="log-date">2026.01</span>
+        <div class="log-body">
+          <h3>[What you learned, stated as a takeaway, not a diary entry]</h3>
+          <p>[A few sentences: what happened, what it revealed, and what you'll do differently. Link to the related Project, Research, or Experiment entry if there is one.]</p>
+          <div class="entry-tags"><span>[tag]</span></div>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <span class="log-date">2025.10</span>
+        <div class="log-body">
+          <h3>[What you learned, stated as a takeaway, not a diary entry]</h3>
+          <p>[A few sentences: what happened, what it revealed, and what you'll do differently. Link to the related Project, Research, or Experiment entry if there is one.]</p>
+          <div class="entry-tags"><span>[tag]</span></div>
+        </div>
+      </article>
+
+      <article class="log-entry is-template">
+        <span class="log-date template-flag">TEMPLATE</span>
+        <div class="log-body">
+          <h3>+ New log entry</h3>
+          <p>Copy this row, replace the date and text, and add it to the top of the list — the log reads newest-first.</p>
+          <div class="entry-tags"><span>your-tag</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-line">Octavia Operating System — problem → research → prototype → test → improvement → result.</p>
+  <p class="footer-coords">OCTAVIA // OS // <span id="footerYear"></span></p>
+</footer>
+
+<script src="os.js"></script>
+</body>
+</html>

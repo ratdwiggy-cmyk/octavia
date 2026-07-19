@@ -1,0 +1,96 @@
+/* ==========================================================================
+   COLLABORATE — additional styles
+   Loaded after style.css. Reuses the root design tokens; adds only the
+   components this page needs that don't already exist site-wide.
+   ========================================================================== */
+
+/* Purpose callout — same visual language as the hero's platform-intro box */
+.purpose-note {
+  max-width: 66ch;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--signal);
+  border-radius: 6px;
+  padding: var(--sp-3);
+  margin: 0 0 var(--sp-5);
+}
+.purpose-note p {
+  margin: 0;
+  color: var(--ink-dim);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+.purpose-note strong { color: var(--ink); }
+
+/* Capability grid — "What Octavia works on" */
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-6);
+}
+.capability {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: var(--sp-3);
+}
+.capability-index {
+  font-family: var(--font-mono);
+  color: var(--signal);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.85rem;
+}
+.capability h3 { font-size: 1.05rem; margin: 0 0 0.6rem; }
+.capability p { color: var(--ink-dim); font-size: 0.92rem; margin: 0; }
+
+/* Audience grid — the four invitations */
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-3);
+}
+.audience-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease;
+}
+.audience-card:hover { border-color: var(--ink-faint); }
+.audience-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--signal);
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+}
+.audience-card h3 { font-size: 1.2rem; margin: 0 0 0.75rem; }
+.audience-card p { color: var(--ink-dim); font-size: 0.95rem; margin: 0 0 var(--sp-2); }
+.audience-fit {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  border-top: 1px solid var(--line);
+  padding-top: var(--sp-2);
+  margin: var(--sp-2) 0 var(--sp-3);
+  flex-grow: 1;
+}
+.audience-fit span { color: var(--teal); }
+.audience-cta {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  text-decoration: none;
+  color: var(--ink);
+  margin-top: auto;
+}
+.audience-cta:hover { color: var(--signal); }
+
+@media (max-width: 860px) {
+  .capability-grid { grid-template-columns: 1fr; }
+  .audience-grid { grid-template-columns: 1fr; }
+}

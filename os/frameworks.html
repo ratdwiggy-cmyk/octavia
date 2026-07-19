@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frameworks — Octavia Operating System</title>
+<meta name="description" content="Reusable methods extracted from finished work in the Octavia Operating System.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="os.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="mark">
+    <span class="mark-dot" aria-hidden="true"></span>
+    <span class="mark-text">OCTAVIA</span>
+    <span class="mark-sub">capability platform</span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <a href="index.html">Overview</a>
+    <a href="projects.html">Projects</a>
+    <a href="research.html">Research</a>
+    <a href="experiments.html">Experiments</a>
+    <a href="tools.html">Tools</a>
+    <a href="frameworks.html" aria-current="true">Frameworks</a>
+    <a href="learning-log.html">Learning Log</a>
+    <a href="../index.html#contact" class="nav-cta">Work with me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <p class="os-breadcrumb"><a href="index.html">Operating System</a> / <span class="current">Frameworks</span></p>
+    <p class="eyebrow">05 / FRAMEWORKS</p>
+    <h1 class="section-title" style="max-width:30ch;">Reusable methods extracted from finished work</h1>
+    <p class="section-lede">A framework is the repeatable part of a project, pulled out and written up on its own — a checklist, a decision process, a reusable structure — so the next project can start from it instead of relearning it. This is where "compounding over isolated" actually shows up.</p>
+
+    <div class="entry-grid">
+
+      <!-- TEMPLATE START: copy this card for a new framework -->
+      <article class="entry-card">
+        <div class="entry-top">
+          <span class="stage-badge stage-result"><span class="dot" aria-hidden="true"></span>REUSABLE</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <h3>[Framework name — name the method, not the project it came from]</h3>
+        <p>[What kind of problem this method applies to, and the steps or structure it provides. Keep it usable by someone who wasn't involved in the original project.]</p>
+        <div class="entry-tags"><span>[tag]</span><span>[tag]</span></div>
+        <a href="entry-template.html" class="entry-link">View full entry <span aria-hidden="true">→</span></a>
+      </article>
+      <!-- TEMPLATE END -->
+
+      <article class="entry-card">
+        <div class="entry-top">
+          <span class="stage-badge stage-result"><span class="dot" aria-hidden="true"></span>REUSABLE</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <h3>[Framework name — name the method, not the project it came from]</h3>
+        <p>[What kind of problem this method applies to, and the steps or structure it provides. Keep it usable by someone who wasn't involved in the original project.]</p>
+        <div class="entry-tags"><span>[tag]</span><span>[tag]</span></div>
+        <a href="entry-template.html" class="entry-link">View full entry <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="entry-card is-template">
+        <div class="entry-top">
+          <span class="stage-badge"><span class="dot" aria-hidden="true"></span>REUSABLE</span>
+          <span class="entry-date template-flag">TEMPLATE</span>
+        </div>
+        <h3>+ New framework</h3>
+        <p>Copy this card, duplicate <code>entry-template.html</code>, and write the method up as its own reusable Result — link back to the project it came from.</p>
+        <div class="entry-tags"><span>your-tag</span></div>
+        <a href="entry-template.html" class="entry-link">Open the template <span aria-hidden="true">→</span></a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-line">Octavia Operating System — problem → research → prototype → test → improvement → result.</p>
+  <p class="footer-coords">OCTAVIA // OS // <span id="footerYear"></span></p>
+</footer>
+
+<script src="os.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+/* ==========================================================================
+   OPERATING SYSTEM — additional styles
+   Loaded after ../style.css. Reuses the root design tokens (--bg, --ink,
+   --signal, --font-mono, etc.) defined there — nothing is redefined here.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   BREADCRUMB
+   -------------------------------------------------------------------------- */
+.os-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  margin: 0 0 var(--sp-3);
+}
+.os-breadcrumb a {
+  color: var(--ink-dim);
+  text-decoration: none;
+}
+.os-breadcrumb a:hover { color: var(--signal); }
+.os-breadcrumb .current { color: var(--ink); }
+
+/* --------------------------------------------------------------------------
+   OS TAG — small mono label used in the topbar mark on OS pages
+   -------------------------------------------------------------------------- */
+.mark-os-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--signal);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0.15rem 0.45rem;
+}
+
+/* --------------------------------------------------------------------------
+   STAGE TRACK — the six-stage process, shown horizontally
+   Problem → Research → Prototype → Test → Improvement → Result
+   -------------------------------------------------------------------------- */
+.stage-track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0;
+  list-style: none;
+  margin: 0 0 var(--sp-5);
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.stage-track li.stage {
+  flex: 1 1 140px;
+  padding: var(--sp-3) var(--sp-2);
+  background: var(--bg-panel);
+  border-right: 1px solid var(--line);
+  position: relative;
+}
+.stage-track li.stage:last-child { border-right: none; }
+.stage-track .stage-index {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--signal);
+  margin: 0 0 0.5rem;
+}
+.stage-track .stage-label {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0 0 0.35rem;
+}
+.stage-track .stage-desc {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-dim);
+  line-height: 1.5;
+}
+@media (max-width: 860px) {
+  .stage-track { flex-direction: column; }
+  .stage-track li.stage { border-right: none; border-bottom: 1px solid var(--line); }
+  .stage-track li.stage:last-child { border-bottom: none; }
+}
+
+/* Compact stage badge — used on cards and entry headers to mark current stage */
+.stage-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.55rem;
+  border-radius: 3px;
+  background: var(--signal-soft);
+  color: var(--signal);
+  white-space: nowrap;
+}
+.stage-badge .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.stage-badge.stage-result { background: rgba(76, 154, 141, 0.15); color: var(--teal); }
+.stage-badge.stage-problem,
+.stage-badge.stage-research { background: rgba(143, 163, 154, 0.15); color: var(--ink-dim); }
+.stage-badge.stage-improvement { background: rgba(201, 123, 99, 0.14); color: var(--danger); }
+
+/* --------------------------------------------------------------------------
+   OS HUB — section grid on os/index.html
+   -------------------------------------------------------------------------- */
+.os-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+}
+.os-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: var(--sp-3);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.os-card:hover { border-color: var(--signal); transform: translateY(-2px); }
+.os-card-index {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  margin: 0 0 0.75rem;
+}
+.os-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.6rem;
+}
+.os-card p {
+  color: var(--ink-dim);
+  font-size: 0.9rem;
+  margin: 0 0 var(--sp-2);
+  flex-grow: 1;
+}
+.os-card-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  border-top: 1px solid var(--line);
+  padding-top: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+.os-card-meta .go { color: var(--signal); }
+
+/* --------------------------------------------------------------------------
+   ENTRY CARDS — used on each section's listing page
+   -------------------------------------------------------------------------- */
+.entry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-5);
+}
+.entry-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: var(--sp-3);
+  display: flex;
+  flex-direction: column;
+}
+.entry-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: var(--sp-2);
+}
+.entry-date { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-faint); }
+.entry-card h3 { font-size: 1.1rem; margin: 0 0 0.55rem; }
+.entry-card p { color: var(--ink-dim); font-size: 0.92rem; flex-grow: 1; margin: 0 0 var(--sp-2); }
+.entry-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: var(--sp-2); }
+.entry-tags span {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-faint);
+  border: 1px solid var(--line);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+.entry-link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+  padding-top: var(--sp-2);
+  margin-top: auto;
+}
+.entry-link:hover { color: var(--signal); }
+
+/* Template card — visually distinct "copy me" block, dashed border */
+.entry-card.is-template {
+  border-style: dashed;
+  border-color: var(--ink-faint);
+  background: transparent;
+}
+.entry-card.is-template .entry-top .stage-badge {
+  background: none;
+  border: 1px dashed var(--ink-faint);
+  color: var(--ink-faint);
+}
+.template-flag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+}
+
+/* --------------------------------------------------------------------------
+   TEMPLATE BANNER — instructions box at the top of listing/template pages
+   -------------------------------------------------------------------------- */
+.template-banner {
+  background: var(--bg-panel);
+  border: 1px dashed var(--signal);
+  border-radius: 6px;
+  padding: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+.template-banner p { margin: 0; }
+.template-banner .template-banner-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--signal);
+  margin: 0 0 0.6rem;
+}
+.template-banner code {
+  font-family: var(--font-mono);
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.85em;
+  color: var(--ink);
+}
+.template-banner ol, .template-banner ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--ink-dim);
+  font-size: 0.92rem;
+}
+.template-banner li { margin-bottom: 0.4rem; }
+
+/* --------------------------------------------------------------------------
+   PIPELINE — vertical Problem→Result flow used on entry detail pages
+   -------------------------------------------------------------------------- */
+.pipeline {
+  position: relative;
+  border-left: 1px solid var(--line);
+  padding-left: var(--sp-4);
+  margin: 0 0 var(--sp-5);
+}
+.pipeline-step {
+  position: relative;
+  padding-bottom: var(--sp-5);
+}
+.pipeline-step:last-child { padding-bottom: 0; }
+.pipeline-step::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--sp-4) - 5px);
+  top: 0.3rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--signal);
+}
+.pipeline-step-index {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: var(--signal);
+  margin: 0 0 0.5rem;
+}
+.pipeline-step h3 { font-size: 1.2rem; margin: 0 0 0.6rem; }
+.pipeline-step p { color: var(--ink-dim); max-width: 62ch; margin: 0 0 0.75rem; }
+.pipeline-step .field-hint {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  margin: 0 0 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   ENTRY HEADER — metadata block at top of an entry detail page
+   -------------------------------------------------------------------------- */
+.entry-header-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: var(--sp-3);
+}
+.entry-facts {
+  list-style: none;
+  margin: 0 0 var(--sp-4);
+  padding: var(--sp-3) 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.entry-facts li span {
+  display: block;
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+/* --------------------------------------------------------------------------
+   LEARNING LOG — lightweight dated timeline (lighter than the full pipeline)
+   -------------------------------------------------------------------------- */
+.log-list { display: flex; flex-direction: column; }
+.log-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: var(--sp-3);
+  padding: var(--sp-3) 0;
+  border-top: 1px solid var(--line);
+}
+.log-list .log-entry:last-child { border-bottom: 1px solid var(--line); }
+.log-date { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-faint); padding-top: 0.15rem; }
+.log-body h3 { font-size: 1rem; margin: 0 0 0.4rem; }
+.log-body p { color: var(--ink-dim); font-size: 0.9rem; margin: 0 0 0.5rem; }
+.log-body .entry-tags { margin-bottom: 0; }
+.log-entry.is-template { border-top-style: dashed; }
+.log-entry.is-template .log-date { color: var(--ink-faint); }
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE
+   -------------------------------------------------------------------------- */
+@media (max-width: 860px) {
+  .os-grid { grid-template-columns: 1fr; }
+  .entry-grid { grid-template-columns: 1fr; }
+  .entry-facts { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .log-entry { grid-template-columns: 1fr; gap: 0.4rem; }
+  .entry-facts { grid-template-columns: 1fr; }
+}

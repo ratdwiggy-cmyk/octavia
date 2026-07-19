@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tools — Octavia Operating System</title>
+<meta name="description" content="Reusable tools catalogued by what they do, from the Octavia Operating System.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="os.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="mark">
+    <span class="mark-dot" aria-hidden="true"></span>
+    <span class="mark-text">OCTAVIA</span>
+    <span class="mark-sub">capability platform</span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <a href="index.html">Overview</a>
+    <a href="projects.html">Projects</a>
+    <a href="research.html">Research</a>
+    <a href="experiments.html">Experiments</a>
+    <a href="tools.html" aria-current="true">Tools</a>
+    <a href="frameworks.html">Frameworks</a>
+    <a href="learning-log.html">Learning Log</a>
+    <a href="../index.html#contact" class="nav-cta">Work with me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <p class="os-breadcrumb"><a href="index.html">Operating System</a> / <span class="current">Tools</span></p>
+    <p class="eyebrow">04 / TOOLS</p>
+    <h1 class="section-title" style="max-width:30ch;">What came out the other end, catalogued by what it does</h1>
+    <p class="section-lede">Tools are the reusable Result of a pipeline, separated from the story of how they were built. Each one links back to the Project or Experiment it came from, so the reasoning is never more than one click away.</p>
+
+    <div class="entry-grid">
+
+      <!-- TEMPLATE START: copy this card for a new tool -->
+      <article class="entry-card">
+        <div class="entry-top">
+          <span class="stage-badge stage-result"><span class="dot" aria-hidden="true"></span>SHIPPED</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <h3>[Tool name]</h3>
+        <p>[What it does, in one sentence, and who it's for. Link to a live demo, repo, or download if there is one.]</p>
+        <div class="entry-tags"><span>[stack]</span><span>[stack]</span></div>
+        <a href="projects.html" class="entry-link">From project: [Project name] <span aria-hidden="true">→</span></a>
+      </article>
+      <!-- TEMPLATE END -->
+
+      <article class="entry-card">
+        <div class="entry-top">
+          <span class="stage-badge stage-result"><span class="dot" aria-hidden="true"></span>SHIPPED</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <h3>[Tool name]</h3>
+        <p>[What it does, in one sentence, and who it's for. Link to a live demo, repo, or download if there is one.]</p>
+        <div class="entry-tags"><span>[stack]</span><span>[stack]</span></div>
+        <a href="experiments.html" class="entry-link">From experiment: [Experiment name] <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="entry-card is-template">
+        <div class="entry-top">
+          <span class="stage-badge"><span class="dot" aria-hidden="true"></span>SHIPPED</span>
+          <span class="entry-date template-flag">TEMPLATE</span>
+        </div>
+        <h3>+ New tool</h3>
+        <p>Copy this card. Tools don't need their own pipeline page — link back to the Project or Experiment that produced them.</p>
+        <div class="entry-tags"><span>your-stack</span></div>
+        <a href="projects.html" class="entry-link">Link to source entry <span aria-hidden="true">→</span></a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-line">Octavia Operating System — problem → research → prototype → test → improvement → result.</p>
+  <p class="footer-coords">OCTAVIA // OS // <span id="footerYear"></span></p>
+</footer>
+
+<script src="os.js"></script>
+</body>
+</html>

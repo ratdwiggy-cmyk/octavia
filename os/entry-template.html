@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Entry title] — Octavia Operating System</title>
+<meta name="description" content="[One-sentence summary of the problem this entry solves.]">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="os.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="mark">
+    <span class="mark-dot" aria-hidden="true"></span>
+    <span class="mark-text">OCTAVIA</span>
+    <span class="mark-sub">capability platform</span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <a href="index.html">Overview</a>
+    <a href="projects.html">Projects</a>
+    <a href="research.html">Research</a>
+    <a href="experiments.html">Experiments</a>
+    <a href="tools.html">Tools</a>
+    <a href="frameworks.html">Frameworks</a>
+    <a href="learning-log.html">Learning Log</a>
+    <a href="../index.html#contact" class="nav-cta">Work with me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <p class="os-breadcrumb"><a href="index.html">Operating System</a> / <a href="projects.html">[Section name]</a> / <span class="current">[Entry title]</span></p>
+
+    <div class="template-banner">
+      <p class="template-banner-label">TEMPLATE — DUPLICATE THIS FILE FOR EACH NEW ENTRY</p>
+      <p>This page is the reusable entry template. To use it: duplicate this file, rename it
+      (e.g. <code>load-balancer-notes.html</code>), replace every <code>[bracketed placeholder]</code>,
+      delete this banner, and link to it from the matching section page's entry card. Not every
+      entry needs all six stages filled in — an entry currently at the Research stage can leave
+      Prototype through Result marked <code>[not started]</code>.</p>
+    </div>
+
+    <p class="eyebrow">[SECTION NAME] · ENTRY</p>
+    <h1 class="section-title" style="max-width:34ch;">[Entry title — name the thing, not the mission]</h1>
+    <p class="section-lede">[One or two sentences: what problem this solves, for whom, and the mechanism used to solve it.]</p>
+
+    <div class="entry-header-meta">
+      <span class="stage-badge stage-result"><span class="dot" aria-hidden="true"></span>STAGE 06 · RESULT</span>
+    </div>
+
+    <ul class="entry-facts">
+      <li><span>Started</span>[YYYY.MM]</li>
+      <li><span>Status</span>[Active / Shipped / Paused]</li>
+      <li><span>Category</span>[Project / Research / Experiment / Tool / Framework]</li>
+      <li><span>Tags</span>[tag-one, tag-two]</li>
+    </ul>
+
+    <div class="pipeline">
+
+      <div class="pipeline-step" id="problem">
+        <p class="pipeline-step-index">01 · PROBLEM</p>
+        <h3>[What was broken, slow, or missing]</h3>
+        <p class="field-hint">State it concretely, for a specific person or use case — not "efficiency" but the actual failure mode.</p>
+        <p>[Describe the problem in plain terms. Who hit it, how often, and what it cost them in time, money, or errors. Avoid describing the solution here — this section is only the problem.]</p>
+      </div>
+
+      <div class="pipeline-step" id="research">
+        <p class="pipeline-step-index">02 · RESEARCH</p>
+        <h3>[What was already known]</h3>
+        <p class="field-hint">Prior art, existing tools, constraints, and the approaches worth trying first — and why.</p>
+        <p>[Summarize what you found: existing solutions and why they fell short, relevant prior work, technical constraints that shaped the approach, and the specific approach chosen going in.]</p>
+      </div>
+
+      <div class="pipeline-step" id="prototype">
+        <p class="pipeline-step-index">03 · PROTOTYPE</p>
+        <h3>[The smallest version that could work]</h3>
+        <p class="field-hint">What got built first, and deliberately what it left out.</p>
+        <p>[Describe the first working version: what it did, what it deliberately skipped, and roughly how long it took to get to something testable. Link to a repo, screenshot, or demo if there is one.]</p>
+      </div>
+
+      <div class="pipeline-step" id="test">
+        <p class="pipeline-step-index">04 · TEST</p>
+        <h3>[What happened when it was run against a real case]</h3>
+        <p class="field-hint">Record the result honestly, including if it failed or only partly worked.</p>
+        <p>[What test or real case was it run against? What worked, what broke, and what surprised you. Include numbers where you have them — this is the evidence-over-narrative section.]</p>
+      </div>
+
+      <div class="pipeline-step" id="improvement">
+        <p class="pipeline-step-index">05 · IMPROVEMENT</p>
+        <h3>[What changed in response to the test]</h3>
+        <p class="field-hint">The specific change made — not a general lesson, an actual diff in approach.</p>
+        <p>[Describe the concrete change: what was rebuilt, removed, or rethought because of what the test showed. If this took more than one round, summarize the most important iteration.]</p>
+      </div>
+
+      <div class="pipeline-step" id="result">
+        <p class="pipeline-step-index">06 · RESULT</p>
+        <h3>[The outcome, in plain terms]</h3>
+        <p class="field-hint">What exists now, what it replaced, and what it sets up for the next entry.</p>
+        <p>[State the current, usable outcome: what it does today, who or what it serves, and — if relevant — what reusable method or component it left behind for future work (see <a href="frameworks.html">Frameworks</a>).]</p>
+      </div>
+
+    </div>
+
+    <p class="section-lede"><a href="projects.html">← Back to [Section name]</a></p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-line">Octavia Operating System — problem → research → prototype → test → improvement → result.</p>
+  <p class="footer-coords">OCTAVIA // OS // <span id="footerYear"></span></p>
+</footer>
+
+<script src="os.js"></script>
+</body>
+</html>

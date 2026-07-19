@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Recurring Task] Automation Tool — Example — Octavia Operating System</title>
+<meta name="description" content="Example project template demonstrating the Octavia project format: Problem, Research, Solution, Implementation, Impact, Next Steps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../os.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../../index.html" class="mark">
+    <span class="mark-dot" aria-hidden="true"></span>
+    <span class="mark-text">OCTAVIA</span>
+    <span class="mark-sub">capability platform</span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <a href="../index.html">Overview</a>
+    <a href="../projects.html" aria-current="true">Projects</a>
+    <a href="../research.html">Research</a>
+    <a href="../experiments.html">Experiments</a>
+    <a href="../tools.html">Tools</a>
+    <a href="../frameworks.html">Frameworks</a>
+    <a href="../learning-log.html">Learning Log</a>
+    <a href="../../index.html#contact" class="nav-cta">Work with me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <p class="os-breadcrumb"><a href="../index.html">Operating System</a> / <a href="../projects.html">Projects</a> / <span class="current">Example template</span></p>
+
+
+    <div class="template-banner">
+      <p class="template-banner-label">EXAMPLE TEMPLATE — ILLUSTRATIVE, NOT A COMPLETED PROJECT</p>
+      <p>This entry demonstrates how to reason through a project using the OS format below. The problem framing and method are written out in full so you can see the thinking; anything that would require a real outcome — names, numbers, specific tools, measured results — is left as a <code>[bracketed placeholder]</code> for you to fill in once the work is actually done. Do not publish this page as-is.</p>
+    </div>
+
+
+    <p class="eyebrow">PROJECTS · EXAMPLE ENTRY</p>
+    <h1 class="section-title" style="max-width:36ch;">[Recurring Task] Automation Tool</h1>
+
+    <div class="entry-header-meta">
+      <span class="stage-badge"><span class="dot" aria-hidden="true"></span>EXAMPLE — FIELDS SHOWN FOR REFERENCE</span>
+    </div>
+
+    <ul class="entry-facts">
+      <li><span>Started</span>[YYYY.MM]</li>
+      <li><span>Status</span>Example — not a real deployment</li>
+      <li><span>Category</span>Example — Tool</li>
+      <li><span>Tags</span>[automation, scripting]</li>
+    </ul>
+
+    <div class="pipeline">
+
+      <div class="pipeline-step" id="problem">
+        <p class="pipeline-step-index">01 · PROBLEM</p>
+        <h3>[A recurring task] was consuming disproportionate time relative to its complexity</h3>
+        <p class="field-hint">Name the specific, repeated task, who does it, how often, and what it costs them — not a general inefficiency.</p>
+        <p>[Describe the task precisely — e.g. "Compiling a weekly status update from three separate sources (calendar, ticket tracker, and a shared doc) and reformatting it into a single email."] This was being done manually roughly [frequency, e.g. once a week], taking approximately [X minutes/hours] each time.</p>
+        <p>The cost wasn't just the time spent — it was also the [error / inconsistency / delay] this introduced: [describe the concrete downstream effect, e.g. "the update sometimes went out a day late, or omitted an item because it lived in a source that wasn't checked that week."]</p>
+      </div>
+
+      <div class="pipeline-step" id="research">
+        <p class="pipeline-step-index">02 · RESEARCH</p>
+        <h3>Existing options were either too heavyweight or too rigid for this specific case</h3>
+        <p class="field-hint">What alternatives were considered, and what specifically ruled each one out — this is where evidence-based reasoning shows up.</p>
+        <p>[Summarize what already exists for this class of problem — e.g. "General-purpose automation platforms like Zapier or Make could connect the same data sources, but required a paid tier for the volume needed and added a dependency on a third-party service staying available."]</p>
+        <p>[Summarize the constraint that shaped the final approach — e.g. "Because the three data sources each expose a simple API or export format, a small script that ran on a schedule and required no ongoing subscription was judged to be the better fit than a general automation platform."]</p>
+        <p>This pointed toward building a narrow, single-purpose tool rather than adopting a broad platform — trading some flexibility for lower cost and fewer moving parts.</p>
+      </div>
+
+      <div class="pipeline-step" id="solution">
+        <p class="pipeline-step-index">03 · SOLUTION</p>
+        <h3>[Tool name] — a script that pulls from each source and assembles the update automatically</h3>
+        <p class="field-hint">Describe what was actually decided on, in plain terms, before getting into how it was built.</p>
+        <p>[Describe the solution concept — e.g. "A small program that queries each of the three sources on a fixed schedule, normalizes the data into a single format, and generates the update as a formatted draft ready to review before sending."]</p>
+        <p>The design goal was to remove the manual compilation step entirely while keeping a human in the loop for the final send — the tool prepares the update, it doesn't distribute it unsupervised.</p>
+      </div>
+
+      <div class="pipeline-step" id="implementation">
+        <p class="pipeline-step-index">04 · IMPLEMENTATION</p>
+        <h3>Built as [a script / a small application] using [stack — to be finalized]</h3>
+        <p class="field-hint">This is where real technical detail belongs, once it exists — architecture, stack, and the sequence it was built in.</p>
+        <p>[Describe the technical approach once decided — e.g. "Written in [language], using [libraries/APIs] to connect to each data source, with the schedule managed by [cron / a task scheduler / a serverless function]."]</p>
+        <p>[Note the build sequence — e.g. "Built incrementally: first a script that could pull and print data from one source, then a second and third source added once the first was verified working, then the formatting step, then the scheduling."]</p>
+        <p>[Note any specific technical decision worth recording — e.g. how errors are handled if a source is unavailable, or how credentials are stored.]</p>
+      </div>
+
+      <div class="pipeline-step" id="impact">
+        <p class="pipeline-step-index">05 · IMPACT</p>
+        <h3>Expected to remove the manual compilation step and reduce the update's error rate</h3>
+        <p class="field-hint">State impact as a projection tied to the original problem, not a claimed result — this section is a hypothesis until it's actually measured.</p>
+        <p>If it works as designed, this should recover approximately [X minutes/hours per week] previously spent on manual compilation, and reduce the chance of an omitted item since every source is checked automatically rather than depending on memory.</p>
+        <p>[Note who else this could help — e.g. "The same approach could apply to any recurring update that draws from multiple fixed sources, not just this specific report."]</p>
+        <p>[Once actually deployed and used for a period, replace this paragraph with the measured outcome — time actually saved, errors actually avoided, or what didn't work as expected.]</p>
+      </div>
+
+      <div class="pipeline-step" id="next-steps">
+        <p class="pipeline-step-index">06 · NEXT STEPS</p>
+        <h3>How this could evolve after the first working version</h3>
+        <p class="field-hint">Concrete, sequenced next steps — not a vague roadmap.</p>
+        <p>[List realistic next steps — e.g. "Add a notification if a source fails to respond, instead of silently producing an incomplete update."]</p>
+        <p>[e.g. "Generalize the source-fetching logic so a fourth source can be added without rewriting the formatting step."]</p>
+        <p>[e.g. "If this proves reliable after a month of real use, consider extracting the scheduling-and-notify pattern as a reusable Framework — see the Frameworks section."]</p>
+      </div>
+
+    </div>
+
+    <p class="section-lede"><a href="../projects.html">← Back to Projects</a></p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-line">Octavia Operating System — problem → research → prototype → test → improvement → result.</p>
+  <p class="footer-coords">OCTAVIA // OS // <span id="footerYear"></span></p>
+</footer>
+
+<script src="../os.js"></script>
+</body>
+</html>

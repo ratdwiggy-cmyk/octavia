@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiments — Octavia Operating System</title>
+<meta name="description" content="Prototype and Test stage records in the Octavia Operating System.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="os.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="mark">
+    <span class="mark-dot" aria-hidden="true"></span>
+    <span class="mark-text">OCTAVIA</span>
+    <span class="mark-sub">capability platform</span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <a href="index.html">Overview</a>
+    <a href="projects.html">Projects</a>
+    <a href="research.html">Research</a>
+    <a href="experiments.html" aria-current="true">Experiments</a>
+    <a href="tools.html">Tools</a>
+    <a href="frameworks.html">Frameworks</a>
+    <a href="learning-log.html">Learning Log</a>
+    <a href="../index.html#contact" class="nav-cta">Work with me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <p class="os-breadcrumb"><a href="index.html">Operating System</a> / <span class="current">Experiments</span></p>
+    <p class="eyebrow">03 / EXPERIMENTS</p>
+    <h1 class="section-title" style="max-width:30ch;">Prototype and Test stage records</h1>
+    <p class="section-lede">Experiments are quick, scoped trials — a prototype run against a real case, with the result recorded honestly whether it worked or not. A failed experiment is still worth publishing: it's evidence, and it usually points the next attempt somewhere better.</p>
+
+    <div class="entry-grid">
+
+      <!-- TEMPLATE START: copy this card for a new experiment, then duplicate entry-template.html -->
+      <article class="entry-card">
+        <div class="entry-top">
+          <span class="stage-badge stage-test"><span class="dot" aria-hidden="true"></span>STAGE 04 · TEST</span>
+          <span class="entry-date">2026.02</span>
+        </div>
+        <h3>[Experiment name — what was being tried]</h3>
+        <p>[What was built, what it was tested against, and what happened. Include the result even if it didn't work.]</p>
+        <div class="entry-tags"><span>[tag]</span><span>[tag]</span></div>
+        <a href="entry-template.html" class="entry-link">View full entry <span aria-hidden="true">→</span></a>
+      </article>
+      <!-- TEMPLATE END -->
+
+      <article class="entry-card">
+        <div class="entry-top">
+          <span class="stage-badge stage-improvement"><span class="dot" aria-hidden="true"></span>STAGE 03 · PROTOTYPE</span>
+          <span class="entry-date">2025.12</span>
+        </div>
+        <h3>[Experiment name — what was being tried]</h3>
+        <p>[What was built, what it was tested against, and what happened. Include the result even if it didn't work.]</p>
+        <div class="entry-tags"><span>[tag]</span><span>[tag]</span></div>
+        <a href="entry-template.html" class="entry-link">View full entry <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="entry-card is-template">
+        <div class="entry-top">
+          <span class="stage-badge"><span class="dot" aria-hidden="true"></span>STAGE 03 · PROTOTYPE</span>
+          <span class="entry-date template-flag">TEMPLATE</span>
+        </div>
+        <h3>+ New experiment</h3>
+        <p>Copy this card, duplicate <code>entry-template.html</code>, and fill in Prototype and Test — promote to Projects later if it earns a full pipeline.</p>
+        <div class="entry-tags"><span>your-tag</span></div>
+        <a href="entry-template.html" class="entry-link">Open the template <span aria-hidden="true">→</span></a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-line">Octavia Operating System — problem → research → prototype → test → improvement → result.</p>
+  <p class="footer-coords">OCTAVIA // OS // <span id="footerYear"></span></p>
+</footer>
+
+<script src="os.js"></script>
+</body>
+</html>

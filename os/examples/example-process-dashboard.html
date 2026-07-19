@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Process] Status Dashboard — Example — Octavia Operating System</title>
+<meta name="description" content="Example project template demonstrating the Octavia project format applied to a process-visibility problem.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../os.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../../index.html" class="mark">
+    <span class="mark-dot" aria-hidden="true"></span>
+    <span class="mark-text">OCTAVIA</span>
+    <span class="mark-sub">capability platform</span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <a href="../index.html">Overview</a>
+    <a href="../projects.html" aria-current="true">Projects</a>
+    <a href="../research.html">Research</a>
+    <a href="../experiments.html">Experiments</a>
+    <a href="../tools.html">Tools</a>
+    <a href="../frameworks.html">Frameworks</a>
+    <a href="../learning-log.html">Learning Log</a>
+    <a href="../../index.html#contact" class="nav-cta">Work with me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <p class="os-breadcrumb"><a href="../index.html">Operating System</a> / <a href="../projects.html">Projects</a> / <span class="current">Example template</span></p>
+
+
+    <div class="template-banner">
+      <p class="template-banner-label">EXAMPLE TEMPLATE — ILLUSTRATIVE, NOT A COMPLETED PROJECT</p>
+      <p>This entry demonstrates how to reason through a project using the OS format below. The problem framing and method are written out in full so you can see the thinking; anything that would require a real outcome — names, numbers, specific tools, measured results — is left as a <code>[bracketed placeholder]</code> for you to fill in once the work is actually done. Do not publish this page as-is.</p>
+    </div>
+
+
+    <p class="eyebrow">PROJECTS · EXAMPLE ENTRY</p>
+    <h1 class="section-title" style="max-width:36ch;">[Process] Status Dashboard</h1>
+
+    <div class="entry-header-meta">
+      <span class="stage-badge"><span class="dot" aria-hidden="true"></span>EXAMPLE — FIELDS SHOWN FOR REFERENCE</span>
+    </div>
+
+    <ul class="entry-facts">
+      <li><span>Started</span>[YYYY.MM]</li>
+      <li><span>Status</span>Example — not a real deployment</li>
+      <li><span>Category</span>Example — Systems</li>
+      <li><span>Tags</span>[process, dashboard]</li>
+    </ul>
+
+    <div class="pipeline">
+
+      <div class="pipeline-step" id="problem">
+        <p class="pipeline-step-index">01 · PROBLEM</p>
+        <h3>The status of [a multi-step process] lived only in one person's memory</h3>
+        <p class="field-hint">State exactly which process, and what goes wrong when its state isn't visible.</p>
+        <p>[Describe the process — e.g. "Onboarding a new [client / user / project] involves [N] discrete steps across [systems/people], but there was no single place showing which step a given case was currently on."]</p>
+        <p>[Describe the concrete failure this caused — e.g. "This led to steps being missed or duplicated, and made it hard to answer a simple question like 'is this one done yet?' without asking around."]</p>
+      </div>
+
+      <div class="pipeline-step" id="research">
+        <p class="pipeline-step-index">02 · RESEARCH</p>
+        <h3>A full project-management tool was more than the problem needed</h3>
+        <p class="field-hint">Show that the scope of the solution was chosen deliberately, not defaulted to the biggest available tool.</p>
+        <p>[Describe alternatives considered — e.g. "Looked at adopting a general project-management tool, but the process itself was simple and linear — a fixed sequence of steps repeated for each case — which a full PM tool's flexibility wasn't needed for and would have added setup overhead disproportionate to the problem."]</p>
+        <p>This suggested a small, purpose-built tracker — a fixed set of steps and a status per case — would resolve the actual visibility problem with far less overhead than adopting a general tool.</p>
+      </div>
+
+      <div class="pipeline-step" id="solution">
+        <p class="pipeline-step-index">03 · SOLUTION</p>
+        <h3>[Dashboard name] — a shared view of every case and which step it's on</h3>
+        <p class="field-hint">Describe the solution's shape in terms of what a user sees and does with it.</p>
+        <p>[Describe the concept — e.g. "A single shared table listing every active case, its current step, and who owns that step next, visible to everyone who needs to know without asking."]</p>
+        <p>The scope was deliberately kept to tracking status, not managing the underlying work itself — it answers "where is this case?", not "how do I do this step?"</p>
+      </div>
+
+      <div class="pipeline-step" id="implementation">
+        <p class="pipeline-step-index">04 · IMPLEMENTATION</p>
+        <h3>Built as [a spreadsheet / lightweight web app — to be finalized] with [update mechanism]</h3>
+        <p class="field-hint">This is where the real build details go once decided — including the simplest option that was actually tried first.</p>
+        <p>[Describe the build — e.g. "Started as a shared spreadsheet with one row per case and one column per step, since that required no new software and could be tested immediately."]</p>
+        <p>[Describe what came next if the simple version proved the concept — e.g. "Once the step structure was confirmed to match the real process, it was rebuilt as [a small web app] to add automatic reminders and reduce manual updates."]</p>
+      </div>
+
+      <div class="pipeline-step" id="impact">
+        <p class="pipeline-step-index">05 · IMPACT</p>
+        <h3>Expected to make process status visible without anyone having to ask</h3>
+        <p class="field-hint">Frame impact as what should follow if the design assumption is correct, not a guaranteed result.</p>
+        <p>If the tracker is kept up to date, this should reduce missed or duplicated steps and let anyone check a case's status without interrupting someone else's work to ask.</p>
+        <p>[Once in real use, replace this with the measured outcome — e.g. how often a step was caught being missed before it became a problem, or how much less often status was asked about directly.]</p>
+      </div>
+
+      <div class="pipeline-step" id="next-steps">
+        <p class="pipeline-step-index">06 · NEXT STEPS</p>
+        <h3>How this could evolve past a manually updated tracker</h3>
+        <p class="field-hint">List next steps in the order they'd actually be attempted.</p>
+        <p>[e.g. "Connect the tracker's status directly to the systems where each step actually happens, so it updates automatically instead of relying on manual entry."]</p>
+        <p>[e.g. "Add a simple alert when a case has been stuck on one step longer than expected."]</p>
+        <p>[e.g. "If the step-tracking structure works well here, generalize it as a reusable Framework for other multi-step processes — see the Frameworks section."]</p>
+      </div>
+
+    </div>
+
+    <p class="section-lede"><a href="../projects.html">← Back to Projects</a></p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-line">Octavia Operating System — problem → research → prototype → test → improvement → result.</p>
+  <p class="footer-coords">OCTAVIA // OS // <span id="footerYear"></span></p>
+</footer>
+
+<script src="../os.js"></script>
+</body>
+</html>

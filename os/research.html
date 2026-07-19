@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Octavia Operating System</title>
+<meta name="description" content="Problem and Research stage write-ups in the Octavia Operating System.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="os.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="mark">
+    <span class="mark-dot" aria-hidden="true"></span>
+    <span class="mark-text">OCTAVIA</span>
+    <span class="mark-sub">capability platform</span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <a href="index.html">Overview</a>
+    <a href="projects.html">Projects</a>
+    <a href="research.html" aria-current="true">Research</a>
+    <a href="experiments.html">Experiments</a>
+    <a href="tools.html">Tools</a>
+    <a href="frameworks.html">Frameworks</a>
+    <a href="learning-log.html">Learning Log</a>
+    <a href="../index.html#contact" class="nav-cta">Work with me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <p class="os-breadcrumb"><a href="index.html">Operating System</a> / <span class="current">Research</span></p>
+    <p class="eyebrow">02 / RESEARCH</p>
+    <h1 class="section-title" style="max-width:30ch;">Problem and Research stage write-ups</h1>
+    <p class="section-lede">Research entries capture the first two pipeline stages on their own: a problem worth investigating, and what the investigation turned up — prior art, constraints, and the approach it points toward. Some research entries later grow into full Projects; others stay as reference.</p>
+
+    <div class="entry-grid">
+
+      <!-- TEMPLATE START: copy this card for new research, then duplicate entry-template.html (Prototype–Result can stay "not started") -->
+      <article class="entry-card">
+        <div class="entry-top">
+          <span class="stage-badge stage-research"><span class="dot" aria-hidden="true"></span>STAGE 02 · RESEARCH</span>
+          <span class="entry-date">2026.01</span>
+        </div>
+        <h3>[Research topic — the question being investigated]</h3>
+        <p>[What prompted the question, what was found, and what approach it points toward. Cite real sources where relevant.]</p>
+        <div class="entry-tags"><span>[tag]</span><span>[tag]</span></div>
+        <a href="entry-template.html" class="entry-link">View full entry <span aria-hidden="true">→</span></a>
+      </article>
+      <!-- TEMPLATE END -->
+
+      <article class="entry-card">
+        <div class="entry-top">
+          <span class="stage-badge stage-problem"><span class="dot" aria-hidden="true"></span>STAGE 01 · PROBLEM</span>
+          <span class="entry-date">2025.09</span>
+        </div>
+        <h3>[Research topic — the question being investigated]</h3>
+        <p>[What prompted the question, what was found, and what approach it points toward. Cite real sources where relevant.]</p>
+        <div class="entry-tags"><span>[tag]</span><span>[tag]</span></div>
+        <a href="entry-template.html" class="entry-link">View full entry <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="entry-card is-template">
+        <div class="entry-top">
+          <span class="stage-badge"><span class="dot" aria-hidden="true"></span>STAGE 01 · PROBLEM</span>
+          <span class="entry-date template-flag">TEMPLATE</span>
+        </div>
+        <h3>+ New research entry</h3>
+        <p>Copy this card, duplicate <code>entry-template.html</code>, and fill in Problem and Research — leave later stages marked "not started" until they happen.</p>
+        <div class="entry-tags"><span>your-tag</span></div>
+        <a href="entry-template.html" class="entry-link">Open the template <span aria-hidden="true">→</span></a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-line">Octavia Operating System — problem → research → prototype → test → improvement → result.</p>
+  <p class="footer-coords">OCTAVIA // OS // <span id="footerYear"></span></p>
+</footer>
+
+<script src="os.js"></script>
+</body>
+</html>

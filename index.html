@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Octavia — A Capability Platform by [Your Name]</title>
+<meta name="description" content="Octavia is a public capability platform: a running record of tools, research, and systems, published as they're built.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="#hero" class="mark">
+    <span class="mark-dot" aria-hidden="true"></span>
+    <span class="mark-text">OCTAVIA</span>
+    <span class="mark-sub">capability platform</span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <a href="#mission">Mission</a>
+    <a href="#about">About</a>
+    <a href="#principles">Principles</a>
+    <a href="#projects">Projects</a>
+    <a href="#knowledge">Knowledge</a>
+    <a href="os/index.html">Operating System</a>
+    <a href="collaborate.html">Collaborate</a>
+    <a href="#services">Services</a>
+    <a href="#contact" class="nav-cta">Work with me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="hero" class="section hero">
+    <p class="eyebrow">OCTAVIA // CAPABILITY PLATFORM — RESEARCH, TOOLS, SYSTEMS</p>
+    <h1 class="hero-title">A public record of practical systems, tools, and knowledge<br>built to make people more capable.</h1>
+    <p class="hero-sub">
+      Octavia documents useful work as it happens: systems, software, and written knowledge,
+      published when they're built rather than after the fact. Each entry is designed to
+      reduce friction between a person and the capability they're trying to reach.
+    </p>
+
+    <div class="platform-intro">
+      <p class="platform-intro-label">WHAT IS OCTAVIA</p>
+      <p class="platform-intro-text">
+        Octavia is a public capability platform maintained by [Your name] — a working
+        laboratory for tools, applied research, and systems, kept in one place as they're
+        completed. It is a record of finished, usable work, not a running commentary on the
+        effort behind it.
+      </p>
+    </div>
+
+    <dl class="identity-strip">
+      <div>
+        <dt>Who</dt>
+        <dd>[Your name], founder of Octavia — independent builder and systems researcher.</dd>
+      </div>
+      <div>
+        <dt>What</dt>
+        <dd>Practical tools, reusable systems, and written technical knowledge.</dd>
+      </div>
+      <div>
+        <dt>Why</dt>
+        <dd>To reduce the friction between people and the capability they need.</dd>
+      </div>
+      <div>
+        <dt>How</dt>
+        <dd>Scoped, project-based collaboration — see <a href="#services">Work</a>.</dd>
+      </div>
+    </dl>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View projects</a>
+      <a href="os/index.html" class="btn btn-ghost">Explore the Operating System</a>
+      <a href="#contact" class="btn btn-ghost">Work with me</a>
+    </div>
+
+    <div class="console" role="status" aria-live="polite">
+      <div class="console-row console-head">
+        <span>SYSTEM READOUT</span>
+        <span class="console-blink" aria-hidden="true">●</span>
+      </div>
+      <div class="console-row">
+        <span class="console-key">STATUS</span>
+        <span class="console-val">BUILDING</span>
+      </div>
+      <div class="console-row">
+        <span class="console-key">CURRENT FOCUS</span>
+        <span class="console-val" id="consoleFocus">—</span>
+      </div>
+      <div class="console-row">
+        <span class="console-key">DAYS IN MOTION</span>
+        <span class="console-val" id="consoleDays">—</span>
+      </div>
+      <div class="console-row">
+        <span class="console-key">LOCAL TIME</span>
+        <span class="console-val" id="consoleTime">—</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section id="mission" class="section">
+    <p class="eyebrow">MISSION</p>
+    <h2 class="section-title">Why Octavia exists</h2>
+    <blockquote class="mission-statement">
+      <p>"Build a life of increasing capability, independence, and service by creating tools,
+      knowledge, and systems that reduce human suffering."</p>
+    </blockquote>
+    <p class="section-lede">Octavia is how that mission is carried out in public — as tools,
+    written knowledge, and systems other people can use, rather than a record of the effort
+    behind them.</p>
+    <div class="mission-pillars">
+      <div class="pillar">
+        <p class="pillar-tag">CAPABILITY</p>
+        <p class="pillar-text">Each project is scoped to extend the range of problems I can solve directly, and to leave behind a method the next project can reuse.</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-tag">INDEPENDENCE</p>
+        <p class="pillar-text">Systems and tools are designed to keep operating without continuous dependence on any single institution, platform, or person — including me.</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-tag">SERVICE</p>
+        <p class="pillar-text">Impact is measured by what a system removes from someone else's workload or uncertainty — not by how the project is presented.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <p class="eyebrow">ABOUT</p>
+    <h2 class="section-title">A small, focused platform — not a portfolio of intentions</h2>
+    <p class="section-lede">
+      Octavia grows one shipped project at a time. Everything published here has been used,
+      tested, or run against a real problem before it appears on this site — the goal is a
+      dependable record of what works, not a showcase of what's planned.
+    </p>
+    <div class="about-grid">
+      <div class="about-mark" aria-hidden="true">
+        <div class="about-mark-inner">
+          <span>[PHOTO / MARK]</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="mini-label">FOUNDER</p>
+        <h3>[Your name]</h3>
+        <p>
+          [Write two or three sentences here about your background: what you've built, what
+          you've studied, and what kind of problems you gravitate toward. Name real tools,
+          real systems, and real outcomes rather than adjectives.]
+        </p>
+        <p>
+          I treat problems as systems first and symptoms second. Most projects begin from a
+          direct, practical need, and are only generalized for other people once they've
+          proven reliable in that original context. Octavia is where that work is kept.
+        </p>
+        <ul class="about-facts">
+          <li><span>Based in</span>[Your location]</li>
+          <li><span>Working on</span>[Current focus area]</li>
+          <li><span>Background</span>[Field / discipline]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section id="principles" class="section">
+    <p class="eyebrow">OPERATING PRINCIPLES</p>
+    <h2 class="section-title">Six constraints that shape every project</h2>
+    <div class="principles-grid">
+      <article class="principle">
+        <p class="principle-index">P01</p>
+        <h3>Systems over improvisation</h3>
+        <p>A recurring problem gets a repeatable process, not a one-time fix. If the same failure happens twice, the system gets redesigned.</p>
+      </article>
+      <article class="principle">
+        <p class="principle-index">P02</p>
+        <h3>Tools over advice</h3>
+        <p>A working tool encodes a solution so it can be reused without my direct involvement. It should require less explanation than an instruction ever could.</p>
+      </article>
+      <article class="principle">
+        <p class="principle-index">P03</p>
+        <h3>Evidence over narrative</h3>
+        <p>Claims are checked against results before they're repeated. A compelling explanation is not a substitute for a working test.</p>
+      </article>
+      <article class="principle">
+        <p class="principle-index">P04</p>
+        <h3>Compounding over isolated</h3>
+        <p>Projects are chosen partly for how much they improve the next one — shared infrastructure, reusable components, transferable methods.</p>
+      </article>
+      <article class="principle">
+        <p class="principle-index">P05</p>
+        <h3>Outcomes over visibility</h3>
+        <p>Work is evaluated by what changed for the people using it, not by how the project is described or presented.</p>
+      </article>
+      <article class="principle">
+        <p class="principle-index">P06</p>
+        <h3>Independence over dependency</h3>
+        <p>Systems are designed to keep functioning without ongoing approval, funding, or support from any single source.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="eyebrow">PROJECTS</p>
+    <h2 class="section-title">Selected tools and systems</h2>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="status-tag status-active">ACTIVE</span>
+          <span class="project-year">2026</span>
+        </div>
+        <h3>[Project name]</h3>
+        <p>[One or two sentences describing what problem this tool or system solves, and for whom. Name the mechanism, not just the mission.]</p>
+        <div class="project-tags">
+          <span>[Tag]</span><span>[Tag]</span>
+        </div>
+        <a href="#" class="project-link">View project <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="status-tag status-shipped">SHIPPED</span>
+          <span class="project-year">2025</span>
+        </div>
+        <h3>[Project name]</h3>
+        <p>[One or two sentences describing what problem this tool or system solves, and for whom. Name the mechanism, not just the mission.]</p>
+        <div class="project-tags">
+          <span>[Tag]</span><span>[Tag]</span>
+        </div>
+        <a href="#" class="project-link">View project <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="status-tag status-research">RESEARCH</span>
+          <span class="project-year">2025</span>
+        </div>
+        <h3>[Project name]</h3>
+        <p>[One or two sentences describing what problem this tool or system solves, and for whom. Name the mechanism, not just the mission.]</p>
+        <div class="project-tags">
+          <span>[Tag]</span><span>[Tag]</span>
+        </div>
+        <a href="#" class="project-link">View project <span aria-hidden="true">→</span></a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- KNOWLEDGE -->
+  <section id="knowledge" class="section">
+    <p class="eyebrow">KNOWLEDGE</p>
+    <h2 class="section-title">Written references from completed work</h2>
+    <div class="knowledge-list">
+      <a href="#" class="knowledge-row">
+        <span class="knowledge-date">2026.01</span>
+        <span class="knowledge-title">[Article title — a system, method, or lesson worth reusing]</span>
+        <span class="knowledge-tag">[Category]</span>
+      </a>
+      <a href="#" class="knowledge-row">
+        <span class="knowledge-date">2025.11</span>
+        <span class="knowledge-title">[Article title — a system, method, or lesson worth reusing]</span>
+        <span class="knowledge-tag">[Category]</span>
+      </a>
+      <a href="#" class="knowledge-row">
+        <span class="knowledge-date">2025.08</span>
+        <span class="knowledge-title">[Article title — a system, method, or lesson worth reusing]</span>
+        <span class="knowledge-tag">[Category]</span>
+      </a>
+      <a href="#" class="knowledge-row">
+        <span class="knowledge-date">2025.05</span>
+        <span class="knowledge-title">[Article title — a system, method, or lesson worth reusing]</span>
+        <span class="knowledge-tag">[Category]</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <p class="eyebrow">WORK WITH ME</p>
+    <h2 class="section-title">Ways to work together</h2>
+    <p class="section-lede">Independent, project-based engagements — scoped work with a defined deliverable, not an ongoing retainer.</p>
+    <div class="services-grid">
+      <article class="service-card">
+        <h3>Systems design</h3>
+        <p>Mapping a messy process — personal or organizational — into a system that runs with less friction and less dependence on any one person's memory.</p>
+        <a href="#contact" class="service-link">Start a conversation <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="service-card">
+        <h3>Tool building</h3>
+        <p>Small, focused software: scripts, calculators, dashboards, and internal tools that replace a manual process with a reliable one.</p>
+        <a href="#contact" class="service-link">Start a conversation <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="service-card">
+        <h3>Research &amp; writing</h3>
+        <p>Turning a technical or operational problem into a clear written reference a team can actually use, instead of a document no one reopens.</p>
+        <a href="#contact" class="service-link">Start a conversation <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <p class="eyebrow">CONTACT</p>
+    <h2 class="section-title">Have a problem worth solving?</h2>
+    <p class="section-lede">Tell me what you're working on and what a good outcome would look like. Best for project proposals and collaboration inquiries.</p>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">What are you working on?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message</button>
+      <p class="form-note" id="formNote" role="status"></p>
+    </form>
+
+    <div class="contact-links">
+      <a href="mailto:you@example.com">you@example.com</a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-line">Octavia — systems, tools, and evidence, published as they're built.</p>
+  <p class="footer-coords">OCTAVIA // BUILDER-01 // <span id="footerYear"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

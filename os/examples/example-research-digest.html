@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Domain] Knowledge Retrieval System — Example — Octavia Operating System</title>
+<meta name="description" content="Example project template demonstrating the Octavia project format applied to a research/knowledge-management problem.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../os.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../../index.html" class="mark">
+    <span class="mark-dot" aria-hidden="true"></span>
+    <span class="mark-text">OCTAVIA</span>
+    <span class="mark-sub">capability platform</span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <a href="../index.html">Overview</a>
+    <a href="../projects.html" aria-current="true">Projects</a>
+    <a href="../research.html">Research</a>
+    <a href="../experiments.html">Experiments</a>
+    <a href="../tools.html">Tools</a>
+    <a href="../frameworks.html">Frameworks</a>
+    <a href="../learning-log.html">Learning Log</a>
+    <a href="../../index.html#contact" class="nav-cta">Work with me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <p class="os-breadcrumb"><a href="../index.html">Operating System</a> / <a href="../projects.html">Projects</a> / <span class="current">Example template</span></p>
+
+
+    <div class="template-banner">
+      <p class="template-banner-label">EXAMPLE TEMPLATE — ILLUSTRATIVE, NOT A COMPLETED PROJECT</p>
+      <p>This entry demonstrates how to reason through a project using the OS format below. The problem framing and method are written out in full so you can see the thinking; anything that would require a real outcome — names, numbers, specific tools, measured results — is left as a <code>[bracketed placeholder]</code> for you to fill in once the work is actually done. Do not publish this page as-is.</p>
+    </div>
+
+
+    <p class="eyebrow">PROJECTS · EXAMPLE ENTRY</p>
+    <h1 class="section-title" style="max-width:36ch;">[Domain] Knowledge Retrieval System</h1>
+
+    <div class="entry-header-meta">
+      <span class="stage-badge"><span class="dot" aria-hidden="true"></span>EXAMPLE — FIELDS SHOWN FOR REFERENCE</span>
+    </div>
+
+    <ul class="entry-facts">
+      <li><span>Started</span>[YYYY.MM]</li>
+      <li><span>Status</span>Example — not a real deployment</li>
+      <li><span>Category</span>Example — Systems / Research</li>
+      <li><span>Tags</span>[knowledge management, search]</li>
+    </ul>
+
+    <div class="pipeline">
+
+      <div class="pipeline-step" id="problem">
+        <p class="pipeline-step-index">01 · PROBLEM</p>
+        <h3>Useful information in [a specific domain] was scattered and hard to re-find</h3>
+        <p class="field-hint">Frame this as a real friction, not an abstract desire for "better organization."</p>
+        <p>[Describe the domain and the specific friction — e.g. "Notes on [a technical topic] were split across a notes app, several browser bookmarks, and a handful of half-remembered articles, so re-finding something previously learned often meant re-researching it from scratch."]</p>
+        <p>[Quantify it if possible — e.g. "This happened often enough to be noticeable: at least [N] times over [a period], the same question was researched more than once."]</p>
+      </div>
+
+      <div class="pipeline-step" id="research">
+        <p class="pipeline-step-index">02 · RESEARCH</p>
+        <h3>The real problem was retrieval, not storage — most note-taking tools already solve storage</h3>
+        <p class="field-hint">Show the reasoning that narrowed the problem to something solvable, not just a survey of tools.</p>
+        <p>[Describe what was investigated — e.g. "Compared a few existing approaches: a general note-taking app with tags, a bookmarking tool, and a plain folder of markdown files."]</p>
+        <p>[State the finding that reframed the problem — e.g. "All three could store the information; none made it meaningably faster to find later, because retrieval depended on remembering the right tag or filename rather than the content itself."]</p>
+        <p>This suggested the missing piece wasn't a place to put notes, but a way to search them by meaning rather than exact keyword — which pointed toward a lightweight search layer on top of a plain-text store rather than a new note-taking app.</p>
+      </div>
+
+      <div class="pipeline-step" id="solution">
+        <p class="pipeline-step-index">03 · SOLUTION</p>
+        <h3>[System name] — a searchable index over a plain folder of notes</h3>
+        <p class="field-hint">Describe the shape of the solution before the implementation details.</p>
+        <p>[Describe the concept — e.g. "Notes stay as plain markdown files in a single folder — nothing proprietary — but a small index sits on top of them, allowing a search by topic or question rather than by exact filename or tag."]</p>
+        <p>Keeping the notes themselves in an open, plain format was a deliberate choice: the search layer can be replaced or dropped without losing the underlying notes — consistent with building for independence rather than lock-in.</p>
+      </div>
+
+      <div class="pipeline-step" id="implementation">
+        <p class="pipeline-step-index">04 · IMPLEMENTATION</p>
+        <h3>Built as [a local script / small app] using [search approach — to be finalized]</h3>
+        <p class="field-hint">Record the actual build once it exists: stack, method, and how it was verified to work.</p>
+        <p>[Describe the technical approach — e.g. "Uses [a local embedding or keyword-search library] to index the contents of the notes folder, with a simple command-line or browser interface to query it."]</p>
+        <p>[Describe how it was validated — e.g. "Tested against a known set of past notes by searching for a topic from memory and checking whether the relevant note surfaced in the top results."]</p>
+      </div>
+
+      <div class="pipeline-step" id="impact">
+        <p class="pipeline-step-index">05 · IMPACT</p>
+        <h3>Expected to cut re-research time and make past work easier to build on</h3>
+        <p class="field-hint">Impact here is a projection to be replaced with a measured outcome later — not an assumed success.</p>
+        <p>If retrieval works as intended, this should reduce how often a question gets re-researched from scratch, and make it easier to notice when a new problem connects to something already learned.</p>
+        <p>[Once used for a period, replace this with what was actually observed — e.g. how often the tool successfully surfaced a relevant past note, and where it failed to.]</p>
+      </div>
+
+      <div class="pipeline-step" id="next-steps">
+        <p class="pipeline-step-index">06 · NEXT STEPS</p>
+        <h3>Where this could go from a working personal tool</h3>
+        <p class="field-hint">Keep next steps specific and ordered by what would be tried first.</p>
+        <p>[e.g. "Extend the index to cover saved articles and bookmarks, not just self-written notes."]</p>
+        <p>[e.g. "Add a lightweight review prompt that resurfaces an old note related to whatever is currently being worked on."]</p>
+        <p>[e.g. "If the search approach generalizes well, document it as a Framework so it can be applied to other unstructured collections — see the Frameworks section."]</p>
+      </div>
+
+    </div>
+
+    <p class="section-lede"><a href="../projects.html">← Back to Projects</a></p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-line">Octavia Operating System — problem → research → prototype → test → improvement → result.</p>
+  <p class="footer-coords">OCTAVIA // OS // <span id="footerYear"></span></p>
+</footer>
+
+<script src="../os.js"></script>
+</body>
+</html>
